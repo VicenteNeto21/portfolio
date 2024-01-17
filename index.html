@@ -1,37 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- link do css -->
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Vicente Neto</title>
-  </head>
 
-  <style>
-    h1{
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-    }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon/imagem-favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Vicente Neto | Em Manutenção</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-    span{
-        height: 100vh;
-        flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    }
-  </style>
-  <body>
+        *,
+        *:after,
+        *:before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            font-family: 'Poppins', sans-serif;
+        }
 
-    <h1>EM MANUTENÇÃO</h1>
-    <span>Novidades em breve</span>
+        :root {
+            --background: #ffffff;
+            --cor-principal: #df4355;
+            --cor-segundaria: #e4ebf0;
+            --cor-barra-nav: #fff;
+            --cor-fonte: #000000;
+        }
 
-    <script src="main.js"></script>
+        #comunicado {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins', sans-serif;
+        }
 
-  </body>
+        /* Config. das Comunicados */
+        #ola {
+            background: var(--background);
+            color: var(--cor-fonte);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #atualizacoes {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        #link {
+            color: var(--cor-principal);
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="comunicado">
+        <h1 id="ola">Página em Manutenção no momento</h1>
+        <h2 id="#atualizacoes">Em breve novidades</h2>
+        <h4 id="#atualizacoes">Nosso Site temporario: <a id="link" href="./index.html">confira</a></h4>
+    </section>
+</body>
+
 </html>
