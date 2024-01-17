@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- link do css -->
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Vicente Neto</title>
-  </head>
 
-  <style>
-    h1{
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-    }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon/imagem-favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Vicente Neto - Site Oficial</title>
+</head>
 
-    span{
-        height: 100vh;
-        flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    }
-  </style>
-  <body>
+<body>
+    <header>
+        <div class="logo">VN</div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="/">Projetos</a>
+                </li>
+                <li>
+                    <a href="/">Blog</a>
+                </li>
+                <li>
+                    <a href="/">Sobre</a>
+                </li>
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
 
-    <h1>EM MANUTENÇÃO</h1>
-    <span>Novidades em breve</span>
+</body>
 
-    <script src="main.js"></script>
-
-  </body>
 </html>
